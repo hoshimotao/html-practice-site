@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
@@ -11,7 +12,7 @@
 
     <section>
         <nav>
-            <img src="./assets/FES.svg" alt="">
+            <img src="./assets/FES.svg" class="logo">
             <ul>
                 <li>
                     <a href="#about">About</a>
@@ -26,15 +27,17 @@
             </ul>
         </nav>
         <header>
-            <div>
-                <h1>Best place to learn Frontend</h1>
-                <p>Go from being an absolute beginner to pro with a simplified process
-                </p>
-                <button>Start now</button>
+            <div class="row">
+                <div>
+                    <h1>Best place to learn Frontend</h1>
+                    <p class="subheader">Go from being an absolute beginner to pro with a simplified process
+                    </p>
+                    <button>Start now</button>
+                </div>
+                <figure>
+                    <img src="./assets/laptop.png" alt="Home page image">
+                </figure>
             </div>
-            <figure>
-                <img src="./assets/laptop.png" alt="Home page image">
-            </figure>
         </header>
     </section>
 
@@ -42,54 +45,72 @@
 
         <section id="about">
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi explicabo officiis eos quasi
-                enim, odio doloremque! Consequatur velit quae error cum necessitatibus illum, tenetur dolorem. Tempore
-                reiciendis voluptate, mollitia dolor quibusdam maiores veritatis iusto placeat eos ut molestiae
-                distinctio asperiores sapiente quae excepturi cupiditate praesentium animi rerum perspiciatis minima?
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi explicabo officiis eos quasi
-                enim, odio doloremque! Consequatur velit quae error cum necessitatibus illum, tenetur dolorem. Tempore
-                reiciendis voluptate, mollitia dolor quibusdam maiores veritatis iusto placeat eos ut molestiae
-                distinctio asperiores sapiente quae excepturi cupiditate praesentium animi rerum perspiciatis minima?
-            </p>
-            <figure>
-                <img src="./assets/about.jpg" alt="About us">
-            </figure>
+            <div class="row">
+                <div class="section__description">
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Esse
+                            itaque, provident distinctio error recusandae tenetur, quaerat officia sequi nobis rem natus
+                            deserunt, repellendus quod alias deleniti vitae blanditiis cum repudiandae.
+                        </p>
+                        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Esse
+                            itaque, provident distinctio error recusandae tenetur, quaerat officia sequi nobis rem natus
+                            deserunt, repellendus quod alias deleniti vitae blanditiis cum repudiandae.
+                        </p>
+                    </div>
+                    <figure class="about__img--wrapper">
+                        <img src="./assets/about.jpg" alt="About us">
+                    </figure>
+                </div>
+            </div>
         </section>
         <section id="discord">
             <h2>Discord</h2>
-            <figure>
-                <img src="./assets/discord.png" alt="Discord">
-            </figure>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quasi harum possimus repudiandae quam
-                tempora nostrum porro autem animi deserunt officiis obcaecati aliquam ea consectetur cum, doloremque
-                quia? Fugit unde, cupiditate esse, vel dolores recusandae natus dignissimos ipsum et tenetur eum odit
-                sint! Quidem aliquid laboriosam, sequi autem ipsam cum.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quasi harum possimus repudiandae quam
-                tempora nostrum porro autem animi deserunt officiis obcaecati aliquam ea consectetur cum, doloremque
-                quia? Fugit unde, cupiditate esse, vel dolores recusandae natus dignissimos ipsum et tenetur eum odit
-                sint! Quidem aliquid laboriosam, sequi autem ipsam cum.</p>
+            <div class="row">
+                <div class="section__description">
+
+
+
+                    <figure class="about__img--wrapper">
+                        <img src="./assets/discord.png" alt="Discord">
+                    </figure>
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eius
+                            laudantium cumque, consequatur asperiores placeat distinctio quae sequi, ipsam mollitia quas
+                            vero
+                            nostrum cupiditate. Aut illo rem fugit, non magnam maiores.</p>
+                        <p class="section__description--para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Laboriosam
+                            eligendi reprehenderit quo commodi, adipisci sint consectetur cumque expedita autem quaerat
+                            dicta
+                            quidem
+                            earum, deserunt consequuntur? Laudantium harum dolorem quas alias!</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contact">
             <h2>Contact</h2>
             <form action="">
                 <span>Email</span>
-                <input type="text" placeholder="jane@example.com">
+                <input type="email" placeholder="jane@example.com">
                 <span>Message</span>
                 <textarea type="text" placeholder="Your message here"></textarea>
-                <button>Submit</button>
+                <button>Contact us!</button>
             </form>
         </section>
     </main>
 
 
     <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="#">Courses</a>
+        <img class="footer__logo" src="./assets/FES.svg" alt="">
+        <div class="footer__links">
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#discord">Discord</a>
+            <a class="footer__link" href="#contact">Contact</a>
+            <a class="footer__link" href="#">Courses</a>
         </div>
         <p>Copyright Frontend Simplified</p>
     </footer>
